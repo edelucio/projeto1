@@ -61,7 +61,7 @@ $app->get('/produtos', function(){
 
     $sql = new Sql();
 
-    $data = $sql->select("SELECT * FROM tb_produtos where preco_promorcional > 0 order by preco_promorcional desc limit 3;");
+    $data = $sql->select("SELECT * FROM tb_produtos where preco_promocional > 0 order by preco_promocional desc limit 5;");
 
     foreach ($data as &$produto) {
         $preco = $produto['preco'];
@@ -93,7 +93,7 @@ $app->get('/produtos-mais-buscados', function(){
         tb_produtos.largura_centimetro,
         tb_produtos.altura_centimetro,
         tb_produtos.quantidade_estoque,
-        tb_produtos.preco_promorcional,
+        tb_produtos.preco_promocional,
         tb_produtos.foto_principal,
         tb_produtos.visivel,
         cast(avg(review) as dec(10,2)) as media, 
@@ -111,7 +111,7 @@ $app->get('/produtos-mais-buscados', function(){
         tb_produtos.largura_centimetro,
         tb_produtos.altura_centimetro,
         tb_produtos.quantidade_estoque,
-        tb_produtos.preco_promorcional,
+        tb_produtos.preco_promocional,
         tb_produtos.foto_principal,
         tb_produtos.visivel
         LIMIT 8;
