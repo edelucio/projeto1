@@ -22,7 +22,7 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="produto in produtos">
-					<td class="text-center"><img src="img/produtos/{{produto.foto_principal}}" height="150" width="150""></td>
+					<td class="text-center"><img src="img/produtos/{{produto.foto_principal}}" height="150"></td>
 					<td>{{produto.nome_prod_long}}</td>
 					<td class="col-xs-2">
 						<div class="input-group">
@@ -37,7 +37,7 @@
 					</td>
 					<td class="text-center col-xs-2">
 						<p>Entrega para o<br/>CEP: {{carrinho.cep}}</p>
-						<strong class="text-roxo">{{carrinho.prazo}}</strong>
+						<strong class="text-roxo">10 dias úteis</strong>
 					</td>
 					<td class="text-center">R$ {{produto.preco}}</td>
 					<td class="text-center">R$ {{produto.total}}</td>
@@ -77,9 +77,10 @@
 				</div>
 			</div>
 		</div>
-
-		<button type="button" class="btn btn-roxo pull-right" style="margin-top:10px">comprar</button>
-
+		
+		<button type="button" class="btn btn-roxo pull-left" style="margin-top:10px">Continuar comprando</button>
+	
+		<button type="button" class="btn btn-roxo pull-right" style="margin-top:10px">Finalizar Pedido</button>
 	</div>
 
 </section>

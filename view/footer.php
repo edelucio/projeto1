@@ -8,7 +8,7 @@
 						
 						<div class="col-md-2 text-center hidden-xs">
 							
-							<img id="logotipo" src="img/mercado-artesao-logo.png" height="150" width="150">
+							<img id="logotipo" src="img/mercado-artesao-logo.png" height="150">
 
 						</div>
 						<div class="col-md-10">
@@ -20,10 +20,9 @@
 									<h4>LINKS</h4>
 
 									<ul class="list-unstyled">
-										<li><a href="shop">Loja</a></li>
-										<li><a href="produtos">Produtos</a></li>
+											<li><a href="shop">Produtos</a></li>
 										<li><a href="cart">Carrinho</a></li>
-										<li><a href="#">Login</a></li>
+										<li><a href="login">Login</a></li>
 									</ul>
 
 								</div>
@@ -79,7 +78,7 @@
 				
 				<div class="container copyright-mobile">
 					
-					<p class="pull-left">Copyright © Mercaso Artesão. All rights reserved.</p>
+					<p class="pull-left">Copyright © Mercaso Artesão 2020. All rights reserved.</p>
 					<p class="pull-right text-roxo">Created by Edelúcio Luciano</p>
 
 				</div>

@@ -18,6 +18,37 @@ $app->get(
 );
 
 $app->get(
+    '/login',
+    function () {
+        
+        require_once("view/login.php");
+        
+    }
+);
+
+$app->get('/login', function(){
+
+    $sql = new Sql();
+
+    $result = $sql->select("CALL sp_login_get('".session_id()."')");
+
+    $usuario = $result[0];
+
+    $sql = new Sql();
+
+    $login_cookie = $_COOKIE['login'];
+    if(isset($login_cookie)){
+      echo"Bem-Vindo, $login_cookie <br>";
+      echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
+    }else{
+      echo"Bem-Vindo, convidado <br>";
+      echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
+      echo"<br><a href='login.html'>Faça Login</a> Para ler o conteúdo";
+    }
+
+});
+
+$app->get(
     '/shop',
     function () {
         
@@ -83,7 +114,7 @@ $app->get('/produtos-mais-buscados', function(){
         tb_produtos.preco_promorcional,
         tb_produtos.foto_principal,
         tb_produtos.visivel
-        LIMIT 4;
+        LIMIT 8;
     ");
 
     foreach ($data as &$produto) {
@@ -148,6 +179,8 @@ $app->get('/carrinho-dados', function(){
     echo json_encode($carrinho);
 
 });
+
+
 
 $app->get('/carrinhoAdd-:id_prod', function($id_prod){
 

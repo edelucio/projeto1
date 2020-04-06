@@ -7,7 +7,7 @@
 		<div id="destaque-produtos">
 			
 			<div class="col-sm-6 col-imagem">
-				<img src="img/produtos/<?=$produto['foto_principal']?>" height="250" width="250">
+				<img src="img/produtos/<?=$produto['foto_principal']?>" height="250">
 			</div>
 			<div class="col-sm-6 col-descricao">
 				<h2><?=$produto['nome_prod_longo']?></h2>

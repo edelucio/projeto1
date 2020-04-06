@@ -10,7 +10,7 @@
 				
 				<div class="col-sm-6 col-imagem">
 					<a href="produto-{{produto.id_prod}}">
-						<img src="img/produtos/{{produto.foto_principal}}" height="250" width="250">
+						<img src="img/produtos/{{produto.foto_principal}}" height="250">
 					</a>
 				</div>
 				<div class="col-sm-6 col-descricao">
@@ -37,8 +37,9 @@
 	<div id="mais-buscados" class="container">
 		
 		<div class="row text-center title-default-roxo">
-			<h2>Os Itens mais Pesquisados</h2>
-			<hr>	
+			<h2>Produtos</h2>
+			<hr><br>
+
 		</div>
 
 		<div class="row">
@@ -46,7 +47,7 @@
 			<div class="col-md-3" ng-repeat="produto in buscados">
 				<div class="box-produto-info">
 					<a href="produto-{{produto.id_prod}}">
-						<img src="img/produtos/{{produto.foto_principal}}" height="250" width="250" class="produto-img">
+						<img src="img/produtos/{{produto.foto_principal}}" height="250" class="produto-img">
 						<h3>{{produto.nome_prod_longo}}</h3>
 						<div class="estrelas" data-score="{{produto.media}}"></div>
 						<div class="text-qtd-reviews text-arial-cinza">({{produto.total_reviews}})</div>

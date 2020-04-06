@@ -24,10 +24,10 @@
 			<div id="menu-mobile" class="visible-xs">
 				
 				<ul class="list-unstyled">
-					<li><a href="shop">Home</a></li>
-					<li><a href="produtos">Produtos</a></li>
+					<li><a href="index">Loja</a></li>
+					<li><a href="shop">Produtos</a></li>
 					<li><a href="cart">Carrinho</a></li>
-					<li><a href="#">Login</a></li>
+					<li><a href="login">Login</a></li>
 				</ul>
 
 				<div class="bar-close">
@@ -37,7 +37,7 @@
 			</div>
 			
 			<div class="container">
-				<img id="logotipo" src="img/mercado-artesao-logo.png" height="150" width="150">
+				<img id="logotipo" src="img/mercado-artesao-logo.png" height="150">
 			</div>
 
 			<div class="header-black">
@@ -59,10 +59,9 @@
 					
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="shop">Loja</a></li>
-							<li><a href="produtos">Produtos</a></li>
+							<li><a href="shop">Produtos</a></li>
 							<li><a href="cart">Carrinho</a></li>
-							<li><a href="#">Login</a></li>
+							<li><a href="login">Login</a></li>
 							<li class="search">
 								<div class="input-group">
 							      <input type="search" placeholder="procurar" id="input-search">
