@@ -17,7 +17,7 @@
 					<h2>{{produto.nome_prod_longo}}</h2>
 					<div class="box-valor">
 						<div class="text-noboleto text-arial-cinza">no boleto por</div>
-						<div><h2>R$ {{produto.preco_promocional}}</h2></div>
+						<div><h2>R$ {{produto.preco_promorcional}}</h2></div>
 						<div class="text-parcelas text-arial-cinza">ou em até {{produto.parcelas}} x de R$ {{produto.parcela}}</div>
 						<div class="text-total text-arial-cinza">total a prazo R$ {{produto.total}}</div>	
 					</div>

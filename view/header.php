@@ -24,7 +24,6 @@
 			<div id="menu-mobile" class="visible-xs">
 				
 				<ul class="list-unstyled">
-					<li><a href="index">Loja</a></li>
 					<li><a href="shop">Produtos</a></li>
 					<li><a href="cart">Carrinho</a></li>
 					<li><a href="login">Login</a></li>

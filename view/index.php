@@ -9,32 +9,39 @@
 				<div class="row text-center">
 					<h2>Mercado Artesão</h2>
 					<h2><small>Criativide em Artesanato</small></h2>
-					<hr><br>	
+					<hr><br><br>	
 				</div>
 		
 		</div>
 				
-			<div class="row thumbnails">
+			<div class="container">
+
 				<div class="box-produto-info">
-							<img src="img/bolsa12.jpg" height="250" class="produto-img">
+
+					<div class="item">	
+							<h1>BOLSAS</h1>
+							<img src="img/bolsa1.jpg" height="500" widht="500">
 							<h4>Bolsas a partir de R$ 30,00</h4>
 						</div>
-						</<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					
 					<div class="item">
-							<img src="img/brinco1.jpg" height="250" class="produto-img">
+							<h1>BRINCOS</h1>
+							<img src="img/brinco1.jpg" height="500" widht="500"  widht="300">
 							<h4>Brincos a partir de R$ 15,00</h4>
 						</div>
-						</<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					
 						<div class="item">
-							<img src="img/sapato2.jpg" height="250" class="produto-img">
+							<h1>ARTIGO INFANTIL</h1>
+							<img src="img/sapato2.jpg" height="500" widht="500">
 							<h4>Sapatinho Infantil a partir de R$ 20,00</h4>
 						</div>
-						</<i class="fa fa-chevron-right" aria-hidden="true"></i>	
+					
 						<div class="item">
-							<img src="img/capabanco1.jpg" height="250" class="produto-img">
+							<h1>ARTIGO CASA</h1>
+							<img src="img/capabanco1.jpg" height="500" widht="500">
 							<h4>Capa Banco a partir de R$ 20,00</h4>
 						</div>
-						</<i class="fa fa-chevron-right" aria-hidden="true"></i>	
+				
 					</div>
 
 				</div>

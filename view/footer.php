@@ -6,11 +6,6 @@
 					
 					<div class="row">
 						
-						<div class="col-md-2 text-center hidden-xs">
-							
-							<img id="logotipo" src="img/mercado-artesao-logo.png" height="150">
-
-						</div>
 						<div class="col-md-10">
 							
 							<div class="row row-cols">
@@ -20,7 +15,7 @@
 									<h4>LINKS</h4>
 
 									<ul class="list-unstyled">
-											<li><a href="shop">Produtos</a></li>
+										<li><a href="shop">Produtos</a></li>
 										<li><a href="cart">Carrinho</a></li>
 										<li><a href="login">Login</a></li>
 									</ul>
@@ -34,7 +29,7 @@
 										<i class="fa fa-map-marker"></i> <span>Endereço<br/>Cidade</span>
 									</address>
 
-									<p class="hidden-xs"><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>(00) 9999.9999</a></p>
+									<p class="hidden-xs"><a href="#"><i class="fa fa-phone"></i>(00) 9999.9999</a></p>
 									
 									<div class="row-fluid visible-xs">
 										<div class="col-xs-6">

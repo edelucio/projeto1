@@ -36,7 +36,7 @@
 					    </div>
 					</td>
 					<td class="text-center col-xs-2">
-						<p>Entrega para o<br/>CEP: {{carrinho.cep}}</p>
+						<p>Entrega em: {{carrinho.cep}}</p>
 						<strong class="text-roxo">10 dias úteis</strong>
 					</td>
 					<td class="text-center">R$ {{produto.preco}}</td>
@@ -77,10 +77,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<button type="button" class="btn btn-roxo pull-left" style="margin-top:10px">Continuar comprando</button>
 	
-		<button type="button" class="btn btn-roxo pull-right" style="margin-top:10px">Finalizar Pedido</button>
+		<button class="btn btn-roxo pull-right" ng-click="checkout" type="button" style="margin-top:10px">Finalizar Pedido</button>
 	</div>
 
 </section>

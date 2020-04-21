@@ -1,23 +1,106 @@
 <?php include_once("header.php");?>
 
-<head>
-	<title>Mercado Artesão | Registro</title>
-</head>
-<body>
-<h1>Login</h1>
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Autenticação</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<form method="POST" action="login.php">
-	<label>Usuário</label>
-	<input type="text" name="usuario" /><br /><br />
-	
-	<label>Senha</label>
-	<input type="password" name="senha" /><br /><br />
-	
-	<input type="submit" value="Enviar" />
-</form>
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">                
+            <div class="col-md-6">
+                <form action="/login" id="login-form-wrap" class="login" method="post">
+                    <h2>Acessar</h2>
+                    <p class="form-row form-row-first">
+                        <label for="login">E-mail <span class="required">*</span>
+                        </label>
+                        <input type="text" id="login" name="login" class="input-text">
+                    </p>
+                    <p class="form-row form-row-last">
+                        <label for="senha">Senha <span class="required">*</span>
+                        </label>
+                        <input type="password" id="senha" name="password" class="input-text">
+                    </p>
+                    <div class="clear"></div>
+                    <p class="form-row">
+                        <input type="submit" value="Login" class="button">
+                        <label class="inline" for="rememberme"><input type="checkbox" value="forever" id="rememberme" name="rememberme"> Manter conectado </label>
+                    </p>
+                    <p class="lost_password">
+                        <a href="/forgot">Esqueceu a senha?</a>
+                    </p>
 
-</body>
+                    <div class="clear"></div>
+                </form>                    
+            </div>
+            <div class="col-md-6">
+                
+                <div class="alert alert-danger">
+                    Error!
+                </div>
 
-</html>
+                <form id="register-form-wrap" action="/register" class="register" method="post">
+                    <h2>Criar conta</h2>
+                    <p class="form-row form-row-first">
+                        <label for="nome">Nome Completo <span class="required">*</span>
+                        </label>
+                        <input type="text" id="nome" name="name" class="input-text" value="">
+                    </p>
+                    <p class="form-row form-row-first">
+                        <label for="email">E-mail <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" class="input-text" value="">
+                    </p>
+                    <p class="form-row form-row-first">
+                        <label for="phone">Telefone
+                        </label>
+                        <input type="text" id="phone" name="phone" class="input-text" value="">
+                    </p>
+                    <p class="form-row form-row-last">
+                        <label for="senha">Senha <span class="required">*</span>
+                        </label>
+                        <input type="password" id="senha" name="password" class="input-text">
+                    </p>
+                    <div class="clear"></div>
+
+                    <p class="form-row">
+                        <input type="submit" value="Criar Conta" name="login" class="button">
+                    </p>
+
+                    <div class="clear"></div>
+                </form>               
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php include_once("footer.php");?>
+
+<script>
+
+session_start();
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+$conn = mysqli_connect("127.0.0.1", "root", "", "hcode_shop");
+$result = mysql_query("SELECT * FROM tb_users WHERE login = '$login' AND senha= '$senha'");
+
+if(mysql_num_rows ($result) > 0 )
+{
+$_SESSION['login'] = $login;
+$_SESSION['senha'] = $senha;
+
+}
+else{
+	unset ($_SESSION['login']);
+	unset ($_SESSION['senha']);
+    echo ("<script language='javascript' type='text/javascript'>alert('Acesso negado');window.location.href='login.html'</script>");
+
+</script>
